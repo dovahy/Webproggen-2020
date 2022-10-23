@@ -1,0 +1,175 @@
+h3 {
+	color: black;
+	text-align: center;
+}
+
+h4 {
+	border-top: 10px;
+	color: blue;
+}
+
+h5 {
+	text-align: center; 
+}
+
+hr {
+	margin-top: 20px;
+}
+
+body {
+	color: rgb(2,2,2);
+	background-color: black;
+	font-family: 'Fira Sans', Verdana, sans-serif, Arial, Helvetica;
+	line-height: 1.6;
+	max-width: 100%;
+	padding: 1rem;
+	margin: auto;
+}
+
+a {
+	color:#FF4444;
+}
+
+
+h1,h2, strong {
+	color: black;
+	margin-left: 10px;
+	margin-top: 15px;
+}
+
+	#wrapper {
+		display: grid;
+		grid-template-columns: 12rem auto;
+		grid-template-rows: 3rem auto 3rem;
+		grid-column-gap: 5px;  
+		grid-row-gap: 5px;
+		background-color: lightgrey;
+		border-radius: 10px;
+	}
+
+	#year_range {
+		width: 75%;
+		margin-left: 20px;
+	}
+
+	.reset {
+		margin-left: 10px;
+		background-color: white;
+	}
+
+	.aussehen {
+		margin: 5px;
+		border: 2px ridge #C5D8E1;
+		border-radius: 10px;
+	}
+
+	div.item {
+		vertical-align: top;
+		display: inline-block;
+		text-align: center;
+		width: 200px;
+		background-color: grey;
+		margin-left: 15px;
+		margin-bottom: 10px;
+		border-radius: 10px;
+	}
+
+	img {
+		width: 100%;
+		height: 300px;
+	}
+
+	p {
+		color: black;
+		font-size: 15px;
+		text-align: left;
+		margin-left: 10px;
+	}
+
+	header {
+		text-align: center;
+		background-color: limegreen;
+		grid-column: 1 / span 2;
+		grid-row: 1;
+	}
+
+	nav {
+		background-color: deepskyblue;
+		grid-column: 1;
+		grid-row: 2;
+		min-height: 150px;  
+	}
+
+	article {
+		background-color: orange;
+		grid-column: 2;
+		grid-row: 2;
+		min-height: 150px;  
+	}
+
+	footer {
+		text-align: center;
+		background-color: limegreen;
+		grid-column: 1  / span 2;
+		grid-row: 3;
+	}
+
+/* Popup Fenster */
+
+.button {
+  padding: 5px;
+  color: white;
+  border-radius: 10px/20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.button:hover {
+  background: blue;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup .close {
+  position: absolute;
+  top: 1px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
